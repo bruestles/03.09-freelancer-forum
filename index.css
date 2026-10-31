@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1ch;
+  background-color: #f3f3f3;
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding: 1ch;
+}
+
+.freelancers {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+
+  max-width: 60ch;
+  margin: 0 auto;
+}
+
+p {
+  display: flex;
+  flex-direction: row;
+  /* gap: 1rem; */
+
+  max-width: 60ch;
+  margin: 0 auto;
+}
+
+.freelancer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: white;
+  border: 1px solid black;
+  /* border-radius: 0.5rem; */
+  padding: 1rem;
+}
+
+.quote figcaption {
+  text-align: right;
+}
+
+.quote figcaption::before {
+  content: "— ";
+}
